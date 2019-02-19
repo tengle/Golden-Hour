@@ -102,6 +102,8 @@ class FeedTableViewController: UITableViewController {
         cell.specialTimeLabel.text = ""
         cell.specialDetailLabel.text = ""
         cell.badgeImage.image = nil
+        
+        print("Thanks")
 
         let profileQuery = PFQuery(className:"Special")
         
