@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7CE677091B61100492A725 /* Pods_WereDomain2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592CCD068B87E54D472A6CD2 /* Pods_WereDomain2.framework */; };
+		DF31DA99220668B900CFEE87 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31DA98220668B900CFEE87 /* FeedTableViewCell.swift */; };
+		DF31DA9B22066C0F00CFEE87 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31DA9A22066C0F00CFEE87 /* FeedTableViewController.swift */; };
+		DF85BDD621F921B400EF50C0 /* Northside.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF85BDD521F921B400EF50C0 /* Northside.jpg */; };
+		DF85BDD821F92D1000EF50C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF85BDD721F92D1000EF50C0 /* DetailViewController.swift */; };
+		DF85BDDC21F96ED900EF50C0 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = DF85BDDB21F96ED800EF50C0 /* gradient.png */; };
+		DF85BDDE21FA304A00EF50C0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF85BDDD21FA304A00EF50C0 /* WebViewController.swift */; };
+		DF85BE4721FA745700EF50C0 /* mapBG.png in Resources */ = {isa = PBXBuildFile; fileRef = DF85BE4621FA745700EF50C0 /* mapBG.png */; };
+		DF85BE4B21FA788300EF50C0 /* DDlogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DF85BE4A21FA788300EF50C0 /* DDlogo.jpeg */; };
 		DFCB00B721F91B530068EDF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB00B621F91B530068EDF9 /* AppDelegate.swift */; };
-		DFCB00B921F91B530068EDF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB00B821F91B530068EDF9 /* ViewController.swift */; };
 		DFCB00BC21F91B530068EDF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCB00BA21F91B530068EDF9 /* Main.storyboard */; };
 		DFCB00BF21F91B530068EDF9 /* WereDomain2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCB00BD21F91B530068EDF9 /* WereDomain2.xcdatamodeld */; };
 		DFCB00C121F91B540068EDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCB00C021F91B540068EDF9 /* Assets.xcassets */; };
 		DFCB00C421F91B540068EDF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCB00C221F91B540068EDF9 /* LaunchScreen.storyboard */; };
 		DFCB00CF21F91B540068EDF9 /* WereDomain2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB00CE21F91B540068EDF9 /* WereDomain2Tests.swift */; };
 		DFCB00DA21F91B540068EDF9 /* WereDomain2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB00D921F91B540068EDF9 /* WereDomain2UITests.swift */; };
+		DFD2B71622011908001AE870 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2B71522011908001AE870 /* ProfileViewController.swift */; };
+		DFD2B71822024C58001AE870 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2B71722024C58001AE870 /* DashboardViewController.swift */; };
+		DFD2B71A22025FD7001AE870 /* DailySpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2B71922025FD7001AE870 /* DailySpecialViewController.swift */; };
+		DFEA05E121FF77F10015657F /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DFEA05E021FF77F00015657F /* addImage.png */; };
+		DFEA05E72200CAE60015657F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEA05E62200CAE60015657F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		592CCD068B87E54D472A6CD2 /* Pods_WereDomain2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WereDomain2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1CA0A7D5FA01DA92740437 /* Pods-WereDomain2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WereDomain2.release.xcconfig"; path = "Pods/Target Support Files/Pods-WereDomain2/Pods-WereDomain2.release.xcconfig"; sourceTree = "<group>"; };
+		DF31DA98220668B900CFEE87 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		DF31DA9A22066C0F00CFEE87 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		DF85BDD521F921B400EF50C0 /* Northside.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Northside.jpg; sourceTree = "<group>"; };
+		DF85BDD721F92D1000EF50C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DF85BDDB21F96ED800EF50C0 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
+		DF85BDDD21FA304A00EF50C0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DF85BE4621FA745700EF50C0 /* mapBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapBG.png; sourceTree = "<group>"; };
+		DF85BE4A21FA788300EF50C0 /* DDlogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DDlogo.jpeg; sourceTree = "<group>"; };
 		DFCB00B321F91B530068EDF9 /* WereDomain2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WereDomain2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCB00B621F91B530068EDF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFCB00B821F91B530068EDF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFCB00BB21F91B530068EDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFCB00BE21F91B530068EDF9 /* WereDomain2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WereDomain2.xcdatamodel; sourceTree = "<group>"; };
 		DFCB00C021F91B540068EDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +71,12 @@
 		DFCB00D521F91B540068EDF9 /* WereDomain2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WereDomain2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCB00D921F91B540068EDF9 /* WereDomain2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WereDomain2UITests.swift; sourceTree = "<group>"; };
 		DFCB00DB21F91B550068EDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD2B71522011908001AE870 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DFD2B71722024C58001AE870 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		DFD2B71922025FD7001AE870 /* DailySpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySpecialViewController.swift; sourceTree = "<group>"; };
+		DFEA05E021FF77F00015657F /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
+		DFEA05E62200CAE60015657F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9E1DA22BA8B4F3E742DB987 /* Pods-WereDomain2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WereDomain2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WereDomain2/Pods-WereDomain2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7CE677091B61100492A725 /* Pods_WereDomain2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611706885CF8B6E8536F8B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592CCD068B87E54D472A6CD2 /* Pods_WereDomain2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9737BC3EAF16D5C684EEF5E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1DA22BA8B4F3E742DB987 /* Pods-WereDomain2.debug.xcconfig */,
+				DD1CA0A7D5FA01DA92740437 /* Pods-WereDomain2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DFCB00AA21F91B530068EDF9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				DFCB00CD21F91B540068EDF9 /* WereDomain2Tests */,
 				DFCB00D821F91B540068EDF9 /* WereDomain2UITests */,
 				DFCB00B421F91B530068EDF9 /* Products */,
+				9737BC3EAF16D5C684EEF5E4 /* Pods */,
+				611706885CF8B6E8536F8B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +147,25 @@
 		DFCB00B521F91B530068EDF9 /* WereDomain2 */ = {
 			isa = PBXGroup;
 			children = (
-				DFCB00B621F91B530068EDF9 /* AppDelegate.swift */,
-				DFCB00B821F91B530068EDF9 /* ViewController.swift */,
 				DFCB00BA21F91B530068EDF9 /* Main.storyboard */,
+				DF31DA9A22066C0F00CFEE87 /* FeedTableViewController.swift */,
+				DF31DA98220668B900CFEE87 /* FeedTableViewCell.swift */,
+				DFD2B71922025FD7001AE870 /* DailySpecialViewController.swift */,
+				DFD2B71522011908001AE870 /* ProfileViewController.swift */,
+				DFD2B71722024C58001AE870 /* DashboardViewController.swift */,
+				DFEA05E62200CAE60015657F /* LoginViewController.swift */,
+				DF85BDDD21FA304A00EF50C0 /* WebViewController.swift */,
+				DF85BDD721F92D1000EF50C0 /* DetailViewController.swift */,
+				DFCB00B621F91B530068EDF9 /* AppDelegate.swift */,
 				DFCB00C021F91B540068EDF9 /* Assets.xcassets */,
 				DFCB00C221F91B540068EDF9 /* LaunchScreen.storyboard */,
 				DFCB00C521F91B540068EDF9 /* Info.plist */,
 				DFCB00BD21F91B530068EDF9 /* WereDomain2.xcdatamodeld */,
+				DF85BE4621FA745700EF50C0 /* mapBG.png */,
+				DF85BE4A21FA788300EF50C0 /* DDlogo.jpeg */,
+				DF85BDDB21F96ED800EF50C0 /* gradient.png */,
+				DF85BDD521F921B400EF50C0 /* Northside.jpg */,
+				DFEA05E021FF77F00015657F /* addImage.png */,
 			);
 			path = WereDomain2;
 			sourceTree = "<group>";
@@ -135,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFCB00DE21F91B550068EDF9 /* Build configuration list for PBXNativeTarget "WereDomain2" */;
 			buildPhases = (
+				3C8C5888796F67737B0114B0 /* [CP] Check Pods Manifest.lock */,
 				DFCB00AF21F91B530068EDF9 /* Sources */,
 				DFCB00B021F91B530068EDF9 /* Frameworks */,
 				DFCB00B121F91B530068EDF9 /* Resources */,
+				63C294E1111C0B851CFCE9E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +294,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF85BDDC21F96ED900EF50C0 /* gradient.png in Resources */,
+				DF85BE4721FA745700EF50C0 /* mapBG.png in Resources */,
+				DF85BE4B21FA788300EF50C0 /* DDlogo.jpeg in Resources */,
+				DFEA05E121FF77F10015657F /* addImage.png in Resources */,
+				DF85BDD621F921B400EF50C0 /* Northside.jpg in Resources */,
 				DFCB00C421F91B540068EDF9 /* LaunchScreen.storyboard in Resources */,
 				DFCB00C121F91B540068EDF9 /* Assets.xcassets in Resources */,
 				DFCB00BC21F91B530068EDF9 /* Main.storyboard in Resources */,
@@ -254,14 +321,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C8C5888796F67737B0114B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WereDomain2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C294E1111C0B851CFCE9E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WereDomain2/Pods-WereDomain2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WereDomain2/Pods-WereDomain2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFCB00AF21F91B530068EDF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCB00B921F91B530068EDF9 /* ViewController.swift in Sources */,
+				DFEA05E72200CAE60015657F /* LoginViewController.swift in Sources */,
+				DFD2B71822024C58001AE870 /* DashboardViewController.swift in Sources */,
+				DF31DA9B22066C0F00CFEE87 /* FeedTableViewController.swift in Sources */,
+				DFD2B71A22025FD7001AE870 /* DailySpecialViewController.swift in Sources */,
+				DF85BDDE21FA304A00EF50C0 /* WebViewController.swift in Sources */,
 				DFCB00B721F91B530068EDF9 /* AppDelegate.swift in Sources */,
+				DF85BDD821F92D1000EF50C0 /* DetailViewController.swift in Sources */,
 				DFCB00BF21F91B530068EDF9 /* WereDomain2.xcdatamodeld in Sources */,
+				DFD2B71622011908001AE870 /* ProfileViewController.swift in Sources */,
+				DF31DA99220668B900CFEE87 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +557,12 @@
 		};
 		DFCB00DF21F91B550068EDF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E1DA22BA8B4F3E742DB987 /* Pods-WereDomain2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZ426SH9PK;
 				INFOPLIST_FILE = WereDomain2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WereDomain2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,9 +578,12 @@
 		};
 		DFCB00E021F91B550068EDF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1CA0A7D5FA01DA92740437 /* Pods-WereDomain2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZ426SH9PK;
 				INFOPLIST_FILE = WereDomain2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WereDomain2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

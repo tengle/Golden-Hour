@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "54c526c9fe48eb940cb700ae2d70e7be8d77c206"
+            $0.clientKey = "8896fc8f3151aa5e220f4924c0e953fd2b1be6c1"
+            $0.server = "http://3.17.142.135:80/parse"
+        }
+        Parse.initialize(with: configuration)
+        
         return true
     }
 
