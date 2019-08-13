@@ -50,19 +50,22 @@ class FeedTableViewController: UITableViewController {
                     
                                 self.nameArray.append(object["businessname"] as! String)
                     
-                                self.recurringSpecialsArray.append(object["recurringspecial"] as! String)
+                                /*self.recurringSpecialsArray.append(object["recurringspecial"] as! String)*/
                     
                                 self.imageFiles.append(object["bannerimage"] as! PFFileObject)
                     
-                                self.idArray.append(object["userid"] as! String)
                     
                         }
 
                     }
             
-                    self.tableView.reloadData()
+                    self.tableView.reloadData() //This may be updating too much
             
                 }
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 200
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -100,30 +103,28 @@ class FeedTableViewController: UITableViewController {
         
         cell.businessName.text! = nameArray[indexPath.row]
         cell.specialTimeLabel.text = ""
-        cell.specialDetailLabel.text = ""
+        cell.specialDetailsLabel.text = ""
         cell.badgeImage.image = nil
-        
-        print("Thanks")
 
-        let profileQuery = PFQuery(className:"Special")
+        let profileQuery = PFQuery(className:"Profile")
         
-        profileQuery.findObjectsInBackground { (specials: [PFObject]?, error: Error?) in
+        profileQuery.findObjectsInBackground { (profiles: [PFObject]?, error: Error?) in
             
             if let error = error {
                 
                 print(error.localizedDescription)
                 
-            } else if let specials = specials {
+            } else if let profiles = profiles {
                 
-                print("Successfully retrieved \(specials.count) specials.")
+                print("Feed view retrieved \(profiles.count) profiles.")
                 
-                for special in specials {
+                for profile in profiles {
                     
-                    if self.idArray[indexPath.row] == special["userid"] as? String {
+                    if profile["fromtime"] != nil {
+
+                        cell.specialTimeLabel.text = ("\(profile["fromtime"] as! String) - \(profile["totime"] as! String)")
                         
-                        cell.specialTimeLabel.text = ("\(special["fromtime"] as! String) - \(special["totime"] as! String)")
-                        
-                        cell.specialDetailLabel.text = (special["offer"] as! String)
+                        cell.specialDetailsLabel.text = ("Specials: \n \(profile["foodspecial"] as! String) \n \(profile["drinkspecial"] as! String)")
                         
                         cell.badgeImage.image = UIImage(named: "timerred")
                         
@@ -140,9 +141,10 @@ class FeedTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 200
+        return UITableView.automaticDimension
         
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         activeCell = indexPath.row
@@ -165,6 +167,7 @@ class FeedTableViewController: UITableViewController {
        
         }
     }
+    
     @IBAction func logOut(_ sender: Any) {
         
         PFUser.logOut()

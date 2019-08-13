@@ -13,9 +13,8 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var businessName: UILabel!
     @IBOutlet weak var postedImage: UIImageView!
     @IBOutlet weak var specialTimeLabel: UILabel!
-    @IBOutlet weak var specialDetailLabel: UILabel!
     @IBOutlet weak var badgeImage: UIImageView!
-    
+    @IBOutlet weak var specialDetailsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
