@@ -194,7 +194,7 @@ class LoginViewController: UIViewController {
             } else if let objects = objects {
                 
                 // The find succeeded.
-                print("Successfully retrieved \(objects.count) profile.")
+                print("Login retrieved \(objects.count) users.")
                 // Do something with the found objects
                 
                 for object in objects {

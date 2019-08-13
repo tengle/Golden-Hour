@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController {    
     
     @IBOutlet weak var usersLabel: UILabel!
     @IBOutlet weak var viewsLabel: UILabel!

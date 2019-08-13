@@ -19,11 +19,12 @@ class FeedTableViewController: UITableViewController {
     var imageArray = [UIImage]()
     var nameArray = [String]()
     var idArray = [String]()
-    var recurringSpecialsArray = [String]()
+    var eventArray = [String]()
+    var fromtimeArray = [String]()
+    var totimeArray = [String]()
+    var drinkSpecialArray = [String]()
+    var foodSpecialArray = [String]()
 
-    
-    
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -48,11 +49,19 @@ class FeedTableViewController: UITableViewController {
                 
                 for object in objects {
                     
-                                self.nameArray.append(object["businessname"] as! String)
+                        self.nameArray.append(object["businessname"] as! String)
                     
-                                /*self.recurringSpecialsArray.append(object["recurringspecial"] as! String)*/
+                        self.eventArray.append(object["recurringspecial"] as! String)
                     
-                                self.imageFiles.append(object["bannerimage"] as! PFFileObject)
+                        self.imageFiles.append(object["bannerimage"] as! PFFileObject)
+                    
+                        self.fromtimeArray.append(object["fromtime"] as! String)
+                    
+                        self.totimeArray.append(object["totime"] as! String)
+                    
+                        self.drinkSpecialArray.append(object["foodspecial"] as! String)
+                    
+                        self.foodSpecialArray.append(object["drinkspecial"] as! String)
                     
                     
                         }
@@ -102,39 +111,13 @@ class FeedTableViewController: UITableViewController {
         }
         
         cell.businessName.text! = nameArray[indexPath.row]
-        cell.specialTimeLabel.text = ""
-        cell.specialDetailsLabel.text = ""
-        cell.badgeImage.image = nil
-
-        let profileQuery = PFQuery(className:"Profile")
         
-        profileQuery.findObjectsInBackground { (profiles: [PFObject]?, error: Error?) in
-            
-            if let error = error {
-                
-                print(error.localizedDescription)
-                
-            } else if let profiles = profiles {
-                
-                print("Feed view retrieved \(profiles.count) profiles.")
-                
-                for profile in profiles {
-                    
-                    if profile["fromtime"] != nil {
+        cell.specialTimeLabel.text = (fromtimeArray[indexPath.row] + " - " + totimeArray[indexPath.row])
+        
+        cell.specialDetailsLabel.text = ("Food Specials: \n " + foodSpecialArray[indexPath.row] + "\n Drink Specials: \n" + drinkSpecialArray[indexPath.row])
+        
+        cell.badgeImage.image = UIImage(named: "timerred")
 
-                        cell.specialTimeLabel.text = ("\(profile["fromtime"] as! String) - \(profile["totime"] as! String)")
-                        
-                        cell.specialDetailsLabel.text = ("Specials: \n \(profile["foodspecial"] as! String) \n \(profile["drinkspecial"] as! String)")
-                        
-                        cell.badgeImage.image = UIImage(named: "timerred")
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
 
         return cell
     }
@@ -163,7 +146,7 @@ class FeedTableViewController: UITableViewController {
             
             detailVC?.image = imageArray[activeCell]
             detailVC?.name = nameArray[activeCell]
-            detailVC?.recurringSpecial = recurringSpecialsArray[activeCell]
+            detailVC?.foodSpecial = foodSpecialArray[activeCell]
        
         }
     }
